@@ -503,7 +503,7 @@ tr:hover {
     object-fit: contain;
     transition: var(--transicao);
     border-radius: 50%;
-    padding: 8px;
+    padding: 2px;
     background-color: var(--cor-primaria);
 }
 
@@ -513,7 +513,7 @@ tr:hover {
 }
 .redes-icons {
     display: flex;
-    gap: 3rem;
+    gap: 5.5rem;
 }
 
 .redes-icons a {
