@@ -36,10 +36,9 @@
         
         <div class="contato-container">
             <section class="contato-info">
-                <h2><i class="fas fa-envelope"></i> Informações de Contato</h2>
+                <h2>Informações de Contato</h2>
                 
                 <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h3>Endereço</h3>
                         <p>Av. Alberto Carazzai, 1640<br>Cornélio Procópio - PR</p>
@@ -47,15 +46,13 @@
                 </div>
                 
                 <div class="info-item">
-                    <i class="fas fa-phone"></i>
                     <div>
                         <h3>Telefone</h3>
                         <p>(17) 98156-6614</p>
                     </div>
                 </div>
                 
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
+                <div class="info-item"> 
                     <div>
                         <h3>Email</h3>
                         <p>joao-marcosalcala123@hotmail.com</p>
@@ -71,126 +68,13 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="contato-form">
-                <h2><i class="fas fa-paper-plane"></i> Envie uma Mensagem</h2>
-                <form class="form-contato">
-                    <div class="form-group">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="assunto">Assunto:</label>
-                        <select id="assunto" name="assunto">
-                            <option value="duvida">Dúvida</option>
-                            <option value="sugestao">Sugestão</option>
-                            <option value="parceria">Parceria</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="botao">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
-                </form>
-            </section>
         </div>
-        
-        <section class="trabalhe-conosco">
-            <h2 class="titulo-secao"><i class="fas fa-briefcase"></i> Trabalhe Conosco</h2>
-            <p class="subtitulo-secao">Venha fazer parte do nosso time de especialistas em criptomoedas</p>
-            
-            <div class="vagas-container">
-                <div class="vaga-card">
-                    <h3>Analista de Criptomoedas</h3>
-                    <div class="vaga-info">
-                        <span><i class="fas fa-map-marker-alt"></i> Remoto</span>
-                        <span><i class="fas fa-clock"></i> Período Integral</span>
-                    </div>
-                    <p>Buscamos profissional com experiência em análise técnica e fundamentalista de criptoativos.</p>
-                    <a href="#candidatar" class="botao botao-vaga">Quero me Candidatar</a>
-                </div>
-                
-                <div class="vaga-card">
-                    <h3>Desenvolvedor Blockchain</h3>
-                    <div class="vaga-info">
-                        <span><i class="fas fa-map-marker-alt"></i> Híbrido (SP)</span>
-                        <span><i class="fas fa-clock"></i> Período Integral</span>
-                    </div>
-                    <p>Domínio em Solidity, Rust ou Go para desenvolvimento de smart contracts e soluções Web3.</p>
-                    <a href="#candidatar" class="botao botao-vaga">Quero me Candidatar</a>
-                </div>
-                
-                <div class="vaga-card">
-                    <h3>Redator de Conteúdo</h3>
-                    <div class="vaga-info">
-                        <span><i class="fas fa-map-marker-alt"></i> Remoto</span>
-                        <span><i class="fas fa-clock"></i> Meio Período</span>
-                    </div>
-                    <p>Criação de conteúdo didático sobre criptomoedas para iniciantes e investidores.</p>
-                    <a href="#candidatar" class="botao botao-vaga">Quero me Candidatar</a>
-                </div>
-            </div>
-            
-            <div id="candidatar" class="formulario-vaga">
-                <h3>Envie seu currículo</h3>
-                <form class="form-candidatura">
-                    <div class="form-group-duplo">
-                        <div class="form-group">
-                            <label for="candidato-nome">Nome completo:</label>
-                            <input type="text" id="candidato-nome" name="candidato-nome" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="candidato-email">Email:</label>
-                            <input type="email" id="candidato-email" name="candidato-email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="candidato-vaga">Vaga de interesse:</label>
-                        <select id="candidato-vaga" name="candidato-vaga" required>
-                            <option value="">Selecione uma vaga</option>
-                            <option value="analista">Analista de Criptomoedas</option>
-                            <option value="dev">Desenvolvedor Blockchain</option>
-                            <option value="redator">Redator de Conteúdo</option>
-                            <option value="outra">Outra</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="candidato-linkedin">LinkedIn/Portfólio:</label>
-                        <input type="url" id="candidato-linkedin" name="candidato-linkedin">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="candidato-curriculo">Anexe seu currículo (PDF):</label>
-                        <input type="file" id="candidato-curriculo" name="candidato-curriculo" accept=".pdf" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="candidato-mensagem">Mensagem/Carta de apresentação:</label>
-                        <textarea id="candidato-mensagem" name="candidato-mensagem" rows="5"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="botao">Enviar Candidatura <i class="fas fa-upload"></i></button>
-                </form>
-            </div>
         </section>
     </main>
 
     <footer class="rodape">
         <div class="rodape-container">
-            <p>Desenvolvido por <a href="https://www.instagram.com/joaomarcosaa/" target="_blank" class="autor">@joaomarcosaa</a></p>
+            <p>Desenvolvido por <a href="https://www.instagram.com/joaomarcosaa/" target="_blank" class="autor">@joaomarcosaa </a>•2025</p>
         </div>
     </footer>
 </body>

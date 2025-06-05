@@ -76,9 +76,6 @@ body {
 .navegacao {
     background-color: var(--cor-secundaria);
     padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .menu {
@@ -205,12 +202,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.caracteristica-icon {
-    font-size: 2.5rem;
-    color: var(--cor-primaria);
-    margin-bottom: 1rem;
-}
-
 .caracteristica-card h3 {
     color: var(--cor-primaria);
     margin-bottom: 1rem;
@@ -314,6 +305,8 @@ tr:hover {
     font-size: 1.1rem;
 }
 
+/* depoimentos */
+
 .depoimentos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -380,64 +373,11 @@ tr:hover {
     margin-bottom: 1rem;
 }
 
-.depoimento-cripto {
-    margin-top: auto;
-    padding-top: 1rem;
-    color: var(--cor-primaria);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-top: 1px solid var(--cor-borda);
-}
-
-/* depoimento */
-
-.novo-depoimento {
-    background: white;
-    padding: 2rem;
-    border-radius: var(--borda-arredondada);
-    box-shadow: var(--sombra);
-    margin: 3rem 0;
-}
-
-.depoimento-form {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-weight: 600;
-    color: var(--cor-primaria);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    padding: 0.8rem;
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--borda-arredondada);
-    font-family: inherit;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
 /* contato */
 
 .contato-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
     margin: 3rem 0;
 }
 
@@ -446,7 +386,6 @@ tr:hover {
     padding: 2rem;
     border-radius: var(--borda-arredondada);
     box-shadow: var(--sombra);
-    height: fit-content;
 }
 
 .contato-info h2 {
@@ -484,19 +423,6 @@ tr:hover {
     margin-bottom: 1rem;
     color: var(--cor-primaria);
 }
-.icone-img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    margin-right: 10px;
-}
-
-.info-item img.icone-img {
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-}
-
 .icone-rede {
     width: 40px;
     height: 40px;
@@ -508,8 +434,8 @@ tr:hover {
 }
 
 .icone-rede:hover {
-    transform: translateY(-3px);
     background-color: var(--cor-hover);
+    
 }
 .redes-icons {
     display: flex;
@@ -531,116 +457,4 @@ tr:hover {
 .redes-icons a:hover {
     background-color: var(--cor-hover);
     transform: translateY(-3px);
-}
-
-.contato-form {
-    background: white;
-    padding: 2rem;
-    border-radius: var(--borda-arredondada);
-    box-shadow: var(--sombra);
-}
-
-.contato-form h2 {
-    color: var(--cor-primaria);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.form-contato .form-group {
-    margin-bottom: 1.2rem;
-}
-
-
-.trabalhe-conosco {
-    background: #f8f9fa;
-    padding: 3rem 2rem;
-    border-radius: var(--borda-arredondada);
-    margin: 3rem 0;
-}
-
-.trabalhe-conosco .titulo-secao {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.subtitulo-secao {
-    text-align: center;
-    color: var(--cor-secundaria);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.vagas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.vaga-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: var(--borda-arredondada);
-    box-shadow: var(--sombra);
-    display: flex;
-    flex-direction: column;
-}
-
-.vaga-card h3 {
-    color: var(--cor-primaria);
-    margin-bottom: 0.5rem;
-}
-
-.vaga-info {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: var(--cor-secundaria);
-}
-
-.vaga-info span {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-}
-
-.vaga-card p {
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-}
-
-.botao-vaga {
-    align-self: flex-start;
-    margin-top: auto;
-}
-
-.formulario-vaga {
-    background: white;
-    padding: 2rem;
-    border-radius: var(--borda-arredondada);
-    box-shadow: var(--sombra);
-    margin-top: 2rem;
-}
-
-.formulario-vaga h3 {
-    color: var(--cor-primaria);
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.form-group-duplo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.form-candidatura .form-group {
-    margin-bottom: 1.2rem;
 }
